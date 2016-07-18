@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>nupg_data</display-name>
+  <filter>
+    <filter-name>upgFilter</filter-name>
+    <filter-class>jiuzhou.app.filter.DownUpgFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>upgFilter</filter-name>
+    <url-pattern>/MODELDATA/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <servlet-name>reqkey</servlet-name>
+    <servlet-class>jiuzhou.app.web.FirstStepServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>reqkey</servlet-name>
+    <url-pattern>/reqkey</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>reqcfg</servlet-name>
+    <servlet-class>jiuzhou.app.web.SecondStepServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>reqcfg</servlet-name>
+    <url-pattern>/reqcfg</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>requpg</servlet-name>
+    <servlet-class>jiuzhou.app.web.ThirdStepServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>requpg</servlet-name>
+    <url-pattern>/requpg</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+    <servlet-name>report</servlet-name>
+    <servlet-class>jiuzhou.app.web.FourthStepServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>report</servlet-name>
+    <url-pattern>/report</url-pattern>
+  </servlet-mapping>
+  
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+
+</web-app>
