@@ -1,0 +1,153 @@
+@CHARSET "UTF-8";
+
+body{
+	margin:0px;
+	padding:0px;
+	#background-color:#aee;
+	#font-size:12px;
+	#font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft Yahei",Helvetica,Arial,sans-serif;
+}
+#block{
+	margin:80px auto;
+}
+#modelTab{
+	width:76%;
+	margin:10px auto;
+}
+
+#uptTab{
+	width:76%;
+	margin:10px auto;
+}
+table tbody{
+	font-size:14px;
+}
+tbody a{
+	font-size:12px;
+	padding:5px;
+}
+
+/* 添加型号和修改型号弹出框里面内容的样式 */
+.dlgtabStyle{
+	margin:20px auto 0px auto;
+	padding:10px;
+	width:80%;
+}
+
+.dlgtabStyle td{
+	line-height:45px;
+	text-align:center;
+	#border:1px solid red;
+}
+.dlgbtn{
+	display:block;
+	margin:30px auto 10px auto;
+	width:300px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	background:#177ce8;
+	border-radius:5px;
+	color:white;
+	text-decoration:none;	
+}
+a.dlgbtn:hover{
+	background:#2d6db3;
+	color:red;
+}
+a.dlgbtn:active{
+	background:#398ee7;
+}
+#ipterr{
+	display:block;
+	margin:0px auto;
+	width:380px;
+	height:30px;
+	line-height:30px;
+	color:red;
+}
+
+.dlgtabStyle .form-control{
+	text-align:center;
+	width:260px;
+	height:30px;
+	font-size:14px;
+}
+
+.dlgtabStyle .checkbox-control{
+	text-align:center;
+	width:30px;
+	height:20px;
+	font-size:14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 弹出框样式 */
+#wrapLayer{
+	z-index:100;
+	position:fixed;
+	width:100%;
+	height:100%;
+	left:0px;
+	top:0px;
+	background-color:#000;
+	opacity:0.45;
+}
+
+#wnd{
+	z-index:102;
+	position:absolute;
+	background-color:white;
+	border:5px solid #888;
+}
+
+#wnd_banner{
+	height:36px;
+	padding:0px;
+	width:100%;
+	background:#b5e0f5;
+	color:#000;
+	border-bottom:1px solid #ccc;
+}
+
+#wnd_banner a{
+	float:right;
+	width:20px;
+	height:20px;
+	margin-right:10px;
+	margin-top:9px;
+}
+
+#wnd_banner span{
+	line-height:38px;
+	margin-left:10px;
+	font-size:16px;
+}
+
+#wnd_content{
+	width:100%;
+	height:100%;
+	margin-top:0px;
+	color:black;
+	text-align:left;
+	#background-color:rgb(186,214,243);
+}
+
+.iptselect {
+	height: 20px;
+	width: 120px;
+	line-height: 20px;
+	border: 0px
+}
